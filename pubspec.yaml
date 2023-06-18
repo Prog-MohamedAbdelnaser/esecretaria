@@ -25,86 +25,165 @@ environment:
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
 # dependencies can be manually updated by changing the version numbers below to
-
-
 dependencies:
   flutter:
     sdk: flutter
   flutter_localizations: # Add this line
     sdk: flutter # Add this line
   intl: ^0.17.0
-  # remote
-  retrofit:  any
-  built_value: ^8.0.6
-  built_value_generator: ^8.0.6
-  json_serializable: ^6.3.1
-  json_annotation: ^4.6.0
-  fl_chart:
-  dio: ^4.0.6
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+  responsive_builder: ^0.4.1
   logger: ^1.0.0
-  # bloc
-  flutter_bloc: any
-  file_saver: ^0.1.1
-  store_redirect: ^2.0.1
-
-  package_info_plus: ^1.4.2
-  permission_handler: ^10.2.0
-
-  #local data
-  shared_preferences: ^2.0.6
-  fluttertoast:
-  # that makes comparing dart objects by equality is much easier.
-  equatable: ^2.0.3
-
-  #dependency_injection
-  injectable: ^1.5.3
-  get_it: ^7.2.0
+  get_it: ^7.1.3
 
   # get material
   get: ^4.1.4
-  ionicons: ^0.1.2
-  cupertino_icons: ^1.0.2
+
+  # remote
+  retrofit: ^3.3.1
+  built_value: ^8.0.6
+  built_value_generator: ^8.0.6
+  json_serializable: ^6.3.1
+  json_annotation: ^4.0.1
+  dio: ^4.0.0
+
+  #  koin
+  #koin: ^0.15.0-nullsafety.0
+  #koin_bloc: ^ 0.2.0-nullsafety.1
+  # koin_flutter: ^0.11.0-nullsafety.0
+
+  # bloc
+  flutter_bloc: 7.2.0
+
+  shared_preferences: ^2.0.6
+
   flutter_svg: ^0.22.0
-  ars_dialog: ^1.0.8
-  dots_indicator: ^2.1.0
-  pin_dot: ^1.0.3
+
+  rxdart: ^0.26.0
+
+  pin_code_fields: ^7.2.0
+
+  # Map
+  google_maps_flutter: ^2.1.8
+
+  # location
+  geocoding: ^2.0.4
+
+  url_launcher: ^6.0.9
+
+  # for rest app main widget
+  flutter_phoenix: "^1.0.0"
 
   # Firebase
-  firebase_core: ^2.0.0
-  image_picker: ^0.8.5+3
-  flutter_local_notifications: '12.0.4'
-  firebase_messaging:
-  animation_wrappers: ^0.0.4
-  dropdown_button2: ^1.9.2
-  rxdart: ^0.27.7
-  telephony: ^0.2.0
-  linear_step_indicator:
-  flutter_contacts: ^1.1.5
-  flutter_downloader: ^1.10.2
-  path_provider: ^2.0.13
-  url_launcher: ^6.1.10
-  background_app_bar: ^2.0.1
-  animated_bottom_navigation_bar: ^1.2.0
-  easy_pdf_viewer: ^1.0.6
-  pull_to_refresh_flutter3: ^2.0.1
-  custom_date_range_picker:
-  awesome_notifications: ^0.7.4+1
-  file_picker: ^4.6.1
-  easy_image_viewer:
-  flutter_custom_tabs:
-  change_app_package_name: ^1.1.0
+  firebase_core: ^1.19.2
+  firebase_messaging: ^12.0.0
 
+  flutter_local_notifications: ^9.4.1
+  swipe_cards: ^0.1.0
+
+  card_swiper: ^1.0.4
+
+  tcard: ^1.3.5
+
+  swipeable_card_stack: ^0.0.5
+
+  flutter_animarker: ^3.2.0
+
+  smart_alert_dialog: ^2.2.1
+
+  ars_dialog: ^1.0.8
+
+  flutter_map_marker_cluster: ^0.4.0
+  google_maps_cluster_manager: ^3.0.0+1
+  marker_icon: ^0.7.1
+  geolocator: ^8.2.0
+  image_picker: ^0.8.5+3
+  flutter_countdown_timer: ^4.1.0
+  dropdown_search: ^2.0.0
+
+
+  qr_code_scanner: ^1.0.0
+  lottie: ^2.3.2
+  flutter_native_image: ^0.0.6+1
+  date_time_picker: ^2.1.0
+  hijri_picker: ^3.0.0
+  equatable: ^2.0.3
+  platform: ^3.1.0
+  page_indicator: ^0.4.1
+  circle_checkbox: ^0.0.2+1
+  location: ^4.4.0
+  sizer: ^2.0.15
+  flutter_screenutil: ^5.3.1
+  device_info_plus: ^4.0.0
+  platform_device_id: ^1.0.1
+
+  store_redirect: ^2.0.1
+
+  package_info_plus: ^1.4.2
+
+  flutter_google_places: ^0.3.0
+
+  calender_picker: ^1.0.7
+
+  horizontal_calendar_view_widget: ^2.1.2
+
+  steps_indicator: ^1.3.0
+
+  linear_step_indicator: ^1.0.0+3
+
+  nepali_date_picker: ^5.3.0
+  label_marker: ^1.0.1
+  firebase_dynamic_links: ^4.3.6
+  share_plus: ^4.1.0
+  flutter_rating_bar: ^4.0.1
+  #Iban validation lib
+  iban: ^1.0.1
+  animation_wrappers: ^0.0.4
+  flutter_staggered_animations: ^1.1.1
+  #  audioplayers: ^1.1.1
+  just_audio: ^0.9.30
+  local_auth: ^2.1.2
+  flutter_secure_storage: ^6.0.0
+  month_year_picker: ^0.2.0+3
+  animated_toggle_switch: ^0.5.2
+  toggle_switch: ^2.0.1
+  injectable: ^1.5.3
+  syncfusion_flutter_datepicker: 20.3.61
+  dropdown_button2: ^1.9.2
+  qr_flutter: ^4.0.0
+  carousel_slider: ^4.2.1
+  rate: ^0.0.2
+  draggable_fab: ^0.1.4
+  syncfusion_flutter_sliders: ^20.4.50
+  pull_to_refresh_flutter3: ^2.0.1
+
+  file_saver: ^0.1.1
+  permission_handler: ^10.2.0
+  dotted_border:
+  smooth_page_indicator: ^1.0.1
+  #easy_stepper: ^0.5.2+1
+  vibration: ^1.7.7
 
 dependency_overrides:
-  image_picker_android: ^0.8.6+14
+  firebase_core_platform_interface: 4.5.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  retrofit_generator: any
+  retrofit_generator: 4.2.0
   build_runner: ^2.0.4
   flutter_launcher_icons: ^0.9.2
-  flutter_lints: ^2.0.0
-  injectable_generator:
+  # add the generator to your dev_dependencies
+  injectable_generator: ^1.5.0
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^1.0.0
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
